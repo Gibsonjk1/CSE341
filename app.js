@@ -3,10 +3,11 @@ const app = express();
 const port = 3000;
 const routes = require('./routes');
 
-app.get('/', routes.homeroute); 
-
-app.get('/Prosper', routes.Prosper); 
+app.use('/', routes);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
+
+
+
