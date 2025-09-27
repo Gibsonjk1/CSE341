@@ -1,10 +1,10 @@
 //local
 GET http://localhost:3000/contacts
 ###
-GET http://localhost:3000/contact/64b8f3f4e1b1f5d6c8a1e9b2
+GET http://localhost:3000/contact/68d6a30ad69f7d241f9b5789
 
 //production
 ###
-GET localhost:3000/contacts
+GET https://cse341-af70.onrender.com/contacts
 ###
-GET localhost:3000/contact/64b8f3f4e1b1f5d6c8a1e9b2
+GET https://cse341-af70.onrender.com/contact/68d6a30ad69f7d241f9b5789
