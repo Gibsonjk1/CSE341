@@ -1,5 +1,4 @@
 require('dotenv').config();
-const { init } = require('create-react-app/createReactApp');
 const { MongoClient } = require('mongodb');
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
