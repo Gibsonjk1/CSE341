@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Leslie",
+        "lastName": "Gibson",
+        "email": "les.gibson7@gmail.com", 
+        "favoriteColor": "Purple-grey", 
+        "birthday": "1987-10-15"
+    },
+    {
+        "firstName": "Peggy",
+        "lastName": "Gibson",
+        "email": "jpoval@msn.com", 
+        "favoriteColor": "baby blue", 
+        "birthday": "1952-12-16"
+    },
+    {
+        "firstName": "Barrett",
+        "lastName": "Gibson",
+        "email": "bgmaracuja@gmail.com", 
+        "favoriteColor": "red", 
+        "birthday": "1984-07-01"
+    }
+]

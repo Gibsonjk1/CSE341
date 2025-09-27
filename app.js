@@ -1,13 +1,17 @@
+
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const routes = require('./routes');
+const { MongoClient } = require('mongodb');
+const mongodb = require('./db/connection');
 
-app.use('/', routes);
-
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+mongodb.initDb((err, db) => {
+    if (err) {
+        console.log(err);
+    }else{
+        app.listen(port, () => {
+    console.log(`app listening at ${port}`);
 });
-
-
-
+    }});
+app.use('/', routes);
