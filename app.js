@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const routes = require('./routes');
-const { MongoClient } = require('mongodb');
 const mongodb = require('./db/connection');
+const bodyParser = require('body-parser');
 
 mongodb.initDb((err, db) => {
     if (err) {
@@ -14,4 +14,7 @@ mongodb.initDb((err, db) => {
     console.log(`app listening at ${port}`);
 });
     }});
-app.use('/', routes);
+    app.use(bodyParser.json()).use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+    }).use('/', routes);
